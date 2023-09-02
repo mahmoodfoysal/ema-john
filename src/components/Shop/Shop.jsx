@@ -7,6 +7,7 @@ import { addToDb, getShoppingCart } from '../../utilities/fakedb';
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([])
+    
     const handleAddToCart = (product) => {
         const newCart = [...cart, product];
         setCart(newCart);
